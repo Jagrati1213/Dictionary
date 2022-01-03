@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+*,*::after,*::before{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+    --background:#a380dfb3;
+    --color:#fff;
+    --font:'Rubik', sans-serif;
+}
+body{
+    background-color:var(--background);
+    width:100%;
+    min-height: 100vh;
+}
+#dics{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 54px;
+    color: var(--color);
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    width:30%;
+    min-height: 40vh;
+    border-radius: 4px;
+    flex-direction: column;
+    padding-left: 3rem;
+    font-family: var(--font);
+}
+.wrapper,.input_wrap,.word_wrap,.word,#not-found,.word{
+    display: flex;
+    justify-content: space-evenly;
+}
+.input_wrap ,.word_wrap{
+    width: 90%;
+    height: 10vh;
+    align-items: center;
+}
+input,#search{
+    width: 70%;
+    height: 5vh;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+input{
+    border-bottom: 2px solid var(--background);
+    padding-left:0.3rem;
+}
+#search{
+    width: 20%;
+    background-color: var(--background);
+    color: var(--color);
+    cursor: pointer;
+}
+.word_wrap{
+        height: 25vh;
+        color: var(--background);
+        flex-direction: column;
+        align-items: flex-start;
+}
+.word{
+    width: 90%;
+    justify-content: space-between;
+}
+.word h2{
+    font-size: 36px;
+    color: #69558de7;
+    font-weight: bolder;
+}
+#pronouns{
+    color: rgb(163, 162, 162);
+    font-size: 16px;
+    padding-top: 12px;
+}
+.audio{
+    padding-top: 0.4rem;
+    font-size: 21px;
+    font-weight: bold;
+    color: #69558de7;
+    height: inherit;
+}
+.word_mean,.tense{
+    height: 5vh;
+    width: 90%;
+    color: #69558de7;
+}
+.tense{
+    border-left: 4px solid var(--background);
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+/* media Queries */
+@media only screen and (max-width:768px) {
+    .wrapper{
+        min-width: 70%;
+       padding-left: 3rem;
+   }
+   #dics{
+    font-size: 38px;
+   }
+}
+@media only screen and (max-width:450px) {
+     .wrapper{
+        min-width: 96%;
+        padding-left: 7px;
+        min-height: 38vh;
+    }
+    .input_wrap, .word_wrap {
+        width: 100%;
+    }
+    input, #search {
+        font-size: 13px;
+    }
+    .word_wrap{
+        padding-left: 12px;
+    }
+    .word h2 {
+        font-size: 28px;
+    }
+    .audio{
+        font-size: 15px;
+    }
+    #pronouns {
+        font-size: 12px;
+    }
+    .tense{
+        font-size: 12px;
+    }
+}
