@@ -1,7 +1,4 @@
 # Dictionary App
-
-## Overview
-
 The Dictionary App is a simple web application that allows users to look up the definitions of words. This app is built using HTML, CSS, and JavaScript, making it lightweight and easy to use.
 [Dictionary](https://Jagrati1213.github.io/Dictionary)
 
